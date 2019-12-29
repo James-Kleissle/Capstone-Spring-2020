@@ -1,0 +1,12 @@
+<!--Katelynn 12/28/19-->
+
+<!--Not much was done in this section of the App except for some deletion
+of useless code-->
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+</androidx.constraintlayout.widget.ConstraintLayout>
