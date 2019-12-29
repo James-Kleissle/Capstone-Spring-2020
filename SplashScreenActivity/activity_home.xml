@@ -1,0 +1,25 @@
+<!--Katelynn 12/28/19-->
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--change to RelativeLayout since its a way too display child views in certain positions-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+<!--Here we are defining how much padding we want for the main focus of the app home screen-->    
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.splashscreen.HomeActivity">
+
+    <TextView
+    <!--Defining what the homescreen will say and how it should be positioned-->
+        android:layout_width="match_parent"
+        android:text="Clean Sweep and Save"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
