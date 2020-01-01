@@ -1,3 +1,4 @@
+//Worked on by James Kleissle 1/1/2020
 package com.example.capstone;
 
 import androidx.appcompat.app.AppCompatActivity;
