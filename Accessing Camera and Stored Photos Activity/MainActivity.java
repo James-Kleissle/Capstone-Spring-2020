@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         //wrap File object into a content provider
         //require for API >= 24
         //See https://guides.codepath.com/android/Sharing-Content-with-Intents#sharing-files-with-api-24-or-higher
-        Uri fileProvider = FileProvider.getUriForFIle(MainActivity.this, "com.codepath.fileprovider", photoFile);
+        Uri fileProvider = FileProvider.getUriForFile(MainActivity.this, "com.codepath.fileprovider", photoFile);
         intent.putExtra(MediaStore.EXTRA_OUTPUT, fileProvider);
 
         //If you call startActivityForResult() using an intent that no app can handle, then our app will crash.
@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 Bitmap takenImage = BitmapFactory.decodeFile(photoFile.getAbsolutePath());
                 // RESIZE BITMAP, see section below
                 // Load the taken image into a preview
+                //Error on Line 96 (Cannot Resolve symbol 'ivPreview')
                 ImageView ivPreview = (ImageView) findViewById(R.id.ivPreview);
                 ivPreview.setImageBitmap(takenImage);
             } else { // Result was a failure
@@ -122,8 +123,9 @@ public class MainActivity extends AppCompatActivity {
             //Do something with the photo based on Uri
             try {
                 Bitmap selectedImage = MediaStore.Images.Media.getBitmap(MainActivity.this.getContentResolver(), photoUri);
-                ImageView Preview = (ImageView) findViewById(R.id.Preview);
-                Preview.setImageBitmap(selectedImage);
+                //Error on line 127 (Cannot resolve symbol ivPreview)
+                ImageView ivPreview = (ImageView) findViewById(R.id.ivPreview);
+                ivPreview.setImageBitmap(selectedImage);
             } catch (IOException e){
                 e.printStackTrace();
             }
