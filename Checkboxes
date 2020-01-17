@@ -1,0 +1,95 @@
+package com.hfad.pixystick2; //Android classes used in pixystick2
+
+//represents package name
+import android.os.Bundle;
+import android.util.SparseBooleanArray;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+//The main activity extends the Android class
+public class MainActivity extends AppCompatActivity {
+
+//displays the list of items
+    ListView listview ;
+    String[] ListViewItems = new String[] {
+            "ListView ITEM-1",
+            "ListView ITEM-2",
+            "ListView ITEM-3",
+            "ListView ITEM-4",
+            "ListView ITEM-5",
+            "ListView ITEM-6",
+            "ListView ITEM-7",
+            "ListView ITEM-8",
+            "ListView ITEM-9",
+            "ListView ITEM-10",
+            "ListView ITEM-12",
+            "ListView ITEM-13",
+            "ListView ITEM-14",
+            "ListView ITEM-15",
+            "ListView ITEM-16",
+            "ListView ITEM-17",
+            "ListView ITEM-18",
+            "ListView ITEM-19",
+            "ListView ITEM-20",
+            "ListView ITEM-21",
+            "ListView ITEM-22",
+            "ListView ITEM-23",
+            "ListView ITEM-24",
+            "ListView ITEM-25"
+    };
+
+    SparseBooleanArray sparseBooleanArray ;
+
+    //This code was borrowed from the internet.
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        listview = (ListView)findViewById(R.id.listView);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>
+                (MainActivity.this,
+                        android.R.layout.simple_list_item_multiple_choice,
+                        android.R.id.text1, ListViewItems );
+
+        listview.setAdapter(adapter);
+
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // TODO Auto-generated method stub
+
+                sparseBooleanArray = listview.getCheckedItemPositions();
+
+                String ValueHolder = "" ;
+
+                int i = 0 ;
+
+                while (i < sparseBooleanArray.size()) {
+
+                    if (sparseBooleanArray.valueAt(i)) {
+
+                        ValueHolder += ListViewItems [ sparseBooleanArray.keyAt(i) ] + ",";
+                    }
+
+                    i++ ;
+                }
+
+                ValueHolder = ValueHolder.replaceAll("(,)*$", "");
+
+                Toast.makeText(MainActivity.this, "ListView Selected Values = " + ValueHolder, Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+    }
+}
+
+
