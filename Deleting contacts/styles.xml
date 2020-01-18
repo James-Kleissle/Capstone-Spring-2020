@@ -1,0 +1,15 @@
+<!--Katelynn January 17, 2020-->
+<resources>
+
+    <!-- Base application theme. -->
+    
+    <!--All that was done here was stating that we would not be using an action bar for the removal of the contacts page.-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>
