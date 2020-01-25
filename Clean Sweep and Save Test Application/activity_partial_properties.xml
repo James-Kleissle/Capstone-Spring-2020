@@ -55,3 +55,75 @@
         android:textSize="20sp"/>
 
 </RelativeLayout>
+
+
+<!-- Same goes for this file. I did not want to obliterate this code so the new one can be found below.-->
+<!-- Katelynn 1/24/20 -->
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PartialProperties">
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RadioButton
+            android:id="@+id/radio_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacts"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Images"/>
+
+        <RadioButton
+            android:id="@+id/radio_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="SUBMIT"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Home Page"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Contact Remover"
+        android:textSize="20sp"/>
+
+
+
+</RelativeLayout>
