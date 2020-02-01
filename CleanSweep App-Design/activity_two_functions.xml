@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D142C"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".TwoFunctions">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="701dp"
+        android:layout_height="314dp"
+        android:accessibilityHeading="true"
+        android:accessibilityTraversalAfter="@id/button1"
+        android:background="#0D142C"
+        android:contentDescription="@string/todo"
+        android:cropToPadding="true"
+        android:duplicateParentState="true"
+        android:paddingTop="@android:dimen/app_icon_size"
+        android:paddingBottom="@android:dimen/app_icon_size"
+        android:textAlignment="textStart"
+        android:textDirection="locale"
+        android:transformPivotX="@android:dimen/app_icon_size"
+        android:transformPivotY="@android:dimen/app_icon_size"
+        app:srcCompat="@drawable/web_hi_res_512" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D3D3D3"
+        android:text="@string/partial_wipe"
+        android:textAlignment="center"
+        android:textColor="#0D142C"
+        android:textColorHighlight="#0D142C"
+        android:textColorHint="#0D142C"
+        android:textColorLink="#0D142C"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_verification"
+        android:textAlignment="center"
+        android:textColor="#0D142C"
+        android:textColorHighlight="#0D142C"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:text="@string/home_page"
+        android:textAlignment="center"
+        android:textColor="#0D142C"
+        android:textColorHighlight="#0D142C"
+        android:textColorHint="#0D142C"
+        android:textColorLink="#0D142C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>
