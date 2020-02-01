@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="48dp"
+    android:layout_width="48dp">
+
+    <!--Here we are defining the buttons used for the deletion of the contacts. -->
+    <!-- These are the buttons of the delete, refresh, and check all-->
+
+    <item
+        android:id="@+id/menu_refresh"
+        android:title="@string/refresh"
+        android:icon="@drawable/ic_refresh"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_check"
+        android:icon="@drawable/ic_check"
+        android:title="@string/check_all" />
+
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/refresh"
+        app:showAsAction="always" />
+
+</menu>
