@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tacaíocht Il-Teanga</string>
+    <string name="yes">sea</string>
+    <string name="changeLanguage">fáilte</string>
+    <string name="simple_string">Dia duit an Domhan!</string>
+    <string name="welcome">fáilte</string>
+</resources>
