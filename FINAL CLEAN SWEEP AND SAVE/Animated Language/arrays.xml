@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_choice">
+        <item>Hello!</item>
+        <item>It is time to clean up your phone.</item>
+        <item>Please select a language to get started.</item>
+        <item>Hola!</item>
+        <item>Es hora de limpiar tu teléfono</item>
+        <item>Por favor, seleccione un idioma</item>
+    </string-array>
+</resources>
