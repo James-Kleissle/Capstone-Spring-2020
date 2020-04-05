@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#0D142C"
+    tools:context=".SpanEnd">
+
+    <TextView
+        android:layout_width="262dp"
+        android:layout_height="107dp"
+        android:text="Si hay algo más en lo que podamos ayudarlo, haga clic en el botón de inicio. Si no, puede salir de la aplicación o puede volver al botón de inicio y eliminarnos."
+        android:textColor="#F0F0F0"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="hogar" />
+
+</LinearLayout>
