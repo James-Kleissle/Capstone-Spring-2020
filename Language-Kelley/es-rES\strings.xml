@@ -5,4 +5,20 @@
     <string name="yes">si</string>
     <string name="changeLanguage">cambiar idioma</string>
     <string name="simple_string">Hola Mundo!</string>
+    <string name="lets_get_started">Empecemos</string>
+    <string name="partial_wipe">Toallita parcial</string>
+    <string name="phone_verification">Fíorú Fón</string>
+    <string name="home_page">Página de inicio</string>
+    <string name="partial_wipe_message">Haga clic en SÍ para continuar con el borrado parcial. Haga clic en NO si no desea continuar con la Limpieza parcial.</string>
+    <string name="no">No</string>
+    <string name="submit">enviar</string>
+    <string name="contact_remove">contacto eliminar</string>
+    <string name="os_verification">Verificación del sistema operativo</string>
+    <string name="nougat_not_supported">naught ní thacaítear</string>
+    <string name="uninstall">Ar mhaith leat an aip seo a dhíshuiteáil?</string>
+    <string name="ok">Okay</string>
+    <string name="cancel">Cancelar</string>
+    <string name="self_uninstall">Desinstalación automática</string>
+    <string name="contacts">Contactos</string>
+    <string name="todo">QUE HACER</string>
 </resources>
